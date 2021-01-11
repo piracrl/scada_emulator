@@ -1,0 +1,95 @@
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.machines {
+    display: flex;
+}
+
+.machine_1, .machine_2, .machine_3 {
+    margin-top: 30px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.machine-img {
+    width: 64px;
+    margin-bottom: 30px;
+    padding-bottom: 16px;
+    padding-right: 130px;
+    border-bottom: 2px solid black;
+}
+
+.heading {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 0 10px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.on, .on2, .on3,
+.temp, .temp2, .temp3,
+.hod, .hod2, .hod3,
+.obor, .obor2, .obor3 {
+    padding: 15px 20px;
+    text-align: left;
+    margin-left: 16px;
+    background: #96ceb4;
+    width: 110px;
+}
+
+.header-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+}
+
+#basicUsage, #basicUsage2, #basicUsage3  {
+    margin-left: 16px;
+    padding: 15px 20px;
+    background: #96ceb4;
+    width: 110px;
+}
+
+@media (max-width: 768px) {
+    .machines {
+        flex-direction: column;
+    }
+
+    .machine_1, .machine_2, .machine_3 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 11px;
+    }
+
+    #myChart, #myChart2 {
+        height: 280px!important;
+    }
+}
+
+.tables {
+    padding: 0 15px;
+}
+
+.graphs {
+    margin-top: 28px;
+    padding: 0 15px;
+}
